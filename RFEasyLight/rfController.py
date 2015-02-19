@@ -45,7 +45,7 @@ class RFController():
             self._pilight_server.connect((self.SERVER_ADDR, self.SERVER_PORT))
             
             data  = {"message": "send",
-                     "protocol": [PROTOCOL],
+                     "protocol": [self.PROTOCOL],
                      "code": code}
             
             worker = self._pilight_server.makefile(mode="rw")
