@@ -49,12 +49,11 @@ class RFController():
                      "code": code}
             
             worker = self._pilight_server.makefile(mode="rw")
-        
+            
             worker.write(json.dumps(data))
             worker.flush()
             result = worker.readline()
-
-            print("response %s"%(data))
+            print("response %s"%(result))
         except Exception as e:
             print(str(type(e)) + " : " + str(e))
         finally:
