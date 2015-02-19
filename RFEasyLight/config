@@ -1,0 +1,5 @@
+{"test1" :{ "id": 1, "unit": 1, "protocol":["nexa_switch"]},
+"test2" :{ "id": 1, "unit": 2, "protocol":["nexa_switch"]},
+"test3" :{ "id": 1, "unit": 3, "protocol":["nexa_switch"]},
+"all" :{ "id": 1, "unit": 0, "protocol":["nexa_switch"]}
+}
